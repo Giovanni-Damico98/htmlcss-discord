@@ -1,4 +1,4 @@
-/*  Reset */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +17,7 @@ body {
     align-items: center;
 }
 
+/* Definisce uno stile per i pulsanti, con padding, bordi arrotondati e cursore a forma di puntatore */
 .button-set {
     padding: 10px 15px;
     border-radius: 20px;
@@ -24,115 +25,120 @@ body {
     cursor: pointer;
 }
 
-
-
 /* Header */
+/* Definisce uno stile per l'header, con un'altezza minima e uno sfondo colorato */
 .header {
     min-height: 100px;
     background-color: #255EE9;
 }
 
-.box-container {
+/* Crea un contenitore per le caselle dell'header, con larghezza e altezza specificate e sfondo colorato */
+.header .box-container {
     width: 70%;
     height: 50px;
-    background-color: #255EE9;
 }
 
-.h-box1 {
+/* Definisce le dimensioni e l'allineamento per la prima casella dell'header */
+.header .h-box1 {
     width: 25%;
-    height: 50px;
     justify-content: flex-start;
 }
 
-.h-box2 {
+/* Definisce le dimensioni, l'allineamento e la dimensione del testo per la seconda casella dell'header */
+.header .h-box2 {
     width: 10%;
-    height: 50px;
     justify-content: center;
     font-size: 10px;
 }
 
+/* Imposta il colore del testo e rimuove la decorazione per tutti i link */
 a {
     color: white;
     text-decoration: none;
 }
 
+/* Definisce uno stile per il pulsante di login, con padding e bordi arrotondati */
 .login-button {
     padding: 7px;
     border-radius: 15px;
     border: none;
 }
 
-.h-box3 {
+/* Definisce le dimensioni e l'allineamento per la terza casella dell'header */
+.header .h-box3 {
     width: 25%;
-    height: 50px;
     justify-content: flex-end;
 }
 
-
-
 /* Main */
+/* Imposta un'altezza minima e una larghezza del 100% per lo sfondo */
 .back-ground {
     min-height: 450px;
     width: 100%;
 }
 
+/* Imposta un'immagine di sfondo per il primo contenitore e la dimensiona per coprire l'intera area */
 .first-container {
     background-image: url(img/jumbo.png);
     background-size: cover;
 }
 
+/* Imposta il colore di sfondo e i margini per il secondo contenitore */
 .second-container {
     background-color: white;
-    margin-bottom: 300px;
-    margin-top: 150px;
+    margin: 150px 0 300px;
 }
 
+/* Imposta la direzione del flex per il terzo contenitore e il margine inferiore */
 .third-container {
     flex-direction: row-reverse;
     margin-bottom: 300px;
 }
 
+/* Definisce le dimensioni, il colore di sfondo, l'allineamento del testo e il colore del testo per il primo div */
 .first-div {
     height: 200px;
     width: 50%;
     background-color: transparent;
     text-align: center;
-    font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: white;
 }
 
+/* Imposta il padding per il paragrafo all'interno del primo div */
 .first-div p {
-    padding: 40px 0px 30px 0px;
+    padding: 40px 0 30px;
 }
 
+/* Imposta il colore di sfondo e del testo per il pulsante "open-discord" */
 .open-discord {
     background-color: #23272A;
     color: white;
     margin-left: 20px;
 }
 
+/* Imposta il colore di sfondo e del testo per il pulsante di download */
 .download-button {
     background-color: white;
     color: black;
 }
 
+/* Definisce le dimensioni e la dimensione di sfondo per il secondo div */
 .second-div {
-    height: auto;
-    width: auto;
     background-size: cover;
 }
 
+/* Definisce le dimensioni e il padding per il div doppio */
 .double-div {
-    height: auto;
-    width: auto;
-    padding: 0px 30px;
+    padding: 0 30px;
 }
 
+/* Imposta il padding e la dimensione del testo per l'elemento h3 all'interno del div doppio */
 .double-div h3 {
-    padding: 20px 0px;
+    padding: 20px 0;
     font-size: 30px;
 }
 
+/* Imposta l'allineamento e le dimensioni per il quinto div */
 .fifth-div {
     display: flex;
     flex-direction: column;
@@ -143,71 +149,115 @@ a {
     text-align: center;
 }
 
+/* Imposta la dimensione del testo e il padding per l'elemento h3 all'interno del quinto div */
 .fifth-div h3 {
     font-size: 35px;
     padding-bottom: 20px;
 }
 
+/* Imposta la dimensione del testo per il paragrafo all'interno del quinto div */
 .fifth-div p {
     font-size: 14.5px;
 }
 
+/* Imposta la dimensione del testo per l'elemento con id "endpage-h3" */
 #endpage-h3 {
     font-size: 20px;
 }
 
+/* Imposta il colore di sfondo e consente il wrap del flex per il pulsante con id "endpage-button" */
 #endpage-button {
     background-color: #8EA1E1;
     flex-wrap: wrap;
 }
 
 /* Footer */
-
+/* Imposta il colore di sfondo per il contenitore del footer */
 .footer-container {
-    background-color: darkblue;
+    background-color: #23272A;
 }
 
+/* Imposta le dimensioni e il colore di sfondo per il div all'interno del footer */
 .div-container {
     height: 350px;
     width: 60%;
-    background-color: chartreuse;
-    border: solid;
+    background-color: #23272A;
     margin: 50px;
 }
 
+/* Imposta le dimensioni e il margine per la colonna grande all'interno del footer */
 .large-column {
     height: 100%;
-    width: calc((100% / 5) *2);
-    border: solid;
-
+    width: calc((100% / 5) * 2);
+    margin-right: 100px;
 }
 
+/* Imposta il colore, la dimensione del testo e il margine inferiore per l'elemento h3 all'interno della colonna grande */
+.large-column h3 {
+    color: #697EC7;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+/* Imposta l'altezza per l'immagine all'interno della colonna grande */
+.large-column img {
+    height: 15px;
+}
+
+/* Imposta il colore del testo per lo span all'interno della colonna grande */
+.large-column span {
+    color: white;
+}
+
+/* Imposta le dimensioni, il colore del testo e il margine per la colonna piccola */
 .small-column {
     height: 100%;
     width: calc(100% / 5);
-    border: solid;
+    color: white;
+    margin-right: 50px;
+    padding-top: 5px;
+    font-size: 12px;
 }
 
+/* Imposta il colore del testo per l'elemento con classe "column-id" */
+.column-id {
+    color: #697EC7;
+}
+
+/* Imposta l'altezza e il colore di sfondo per l'elemento con id "border" */
 #border {
     height: 2px;
-    background-color: white;
+    background-color: #4A5882;
 }
 
 /* End Page */
+/* Imposta le dimensioni e il colore di sfondo per il contenitore della pagina finale */
 .endpage-container {
     height: 100px;
-    background-color: darkblue;
+    background-color: #23272A;
 }
 
+/* Imposta le dimensioni, il colore di sfondo e l'allineamento per il div della pagina finale */
 .endpage-div {
     height: 60px;
     width: 60%;
-    background-color: chartreuse;
+    background-color: #23272A;
     align-self: flex-end;
     justify-content: space-between;
 }
 
+/* Imposta il padding per i paragrafi all'interno del contenitore della pagina finale */
 .endpage-container p {
-    padding: 0px 5px;
-    border: solid;
+    padding: 0 5px;
+}
+
+/* Imposta il colore di sfondo per il pulsante con id "register-button" */
+#register-button {
+    background-color: #8EA1E1;
+}
+
+/* Imposta il colore e il padding per gli elementi con classe "fa-brands" */
+.fa-brands {
+    color: white;
+    padding: 20px 10px;
 }
