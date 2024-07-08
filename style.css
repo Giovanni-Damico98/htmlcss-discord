@@ -7,7 +7,7 @@
 
 /* Generics */
 body {
-    font-family: sans-serif;
+    font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 /* Utils */
@@ -72,7 +72,7 @@ a {
 
 /* Main */
 .back-ground {
-    min-height: 300px;
+    min-height: 450px;
     width: 100%;
 }
 
@@ -115,17 +115,19 @@ a {
 }
 
 .second-div {
-    height: 200px;
-    width: 40%;
-    background-color: green;
-    border: solid;
+    height: auto;
+    width: auto;
+    background-size: cover;
 }
 
 .double-div {
-    height: 200px;
-    width: 20%;
-    background-color: chartreuse;
-    border: solid;
+    height: auto;
+    width: auto;
+}
+
+.double-div h3 {
+    padding: 20px 0px;
+    font-size: 30px;
 }
 
 .fifth-div {
