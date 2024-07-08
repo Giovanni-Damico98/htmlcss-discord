@@ -22,14 +22,13 @@ body {
 /* Header */
 .header {
     min-height: 100px;
-    background-color: aqua;
+    background-color: #3161E0;
 }
 
 .box-container {
     width: 70%;
     height: 50px;
-    background-color: yellow;
-    border: solid;
+    background-color: #3161E0;
 }
 
 .h-box1 {
@@ -39,10 +38,21 @@ body {
 }
 
 .h-box2 {
-    width: 50%;
+    width: 10%;
     height: 50px;
-    border: solid;
     justify-content: center;
+    font-size: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.login-button {
+    padding: 7px;
+    border-radius: 15px;
+    border: none;
 }
 
 .h-box3 {
